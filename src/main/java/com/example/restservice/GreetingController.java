@@ -3,13 +3,11 @@ package com.example.restservice;
 import java.util.concurrent.atomic.AtomicLong;
 
 import com.example.restservice.Greeting;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
+
 //@RequestMapping(path = "/api")
 public class GreetingController {
 
